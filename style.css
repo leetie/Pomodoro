@@ -14,9 +14,17 @@ body {
 
 #timer {
   font-size: 3em;
+  text-shadow: 
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
+  
 }
 
-#buttons {
+button {
+  background-color: rgb(9, 114, 117);
+  font-size: x-large;
 }
   
 #buttons:hover {
@@ -25,6 +33,8 @@ body {
   
 html {
   height: 100%;
+  
+  
 }
   
 
