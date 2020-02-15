@@ -1,0 +1,36 @@
+body {
+  background-color: grey;
+  font-family: 'Fredoka One', cursive;
+}
+
+#container {
+}
+  
+#content {
+  text-align: center;
+  border: 15px solid black;
+  border-radius: 10px;
+}
+
+#timer {
+  font-size: 3em;
+}
+
+#buttons {
+}
+  
+#buttons:hover {
+  cursor: pointer;
+}
+  
+html {
+  height: 100%;
+}
+  
+
+  
+
+
+
+
+
