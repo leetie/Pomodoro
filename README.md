@@ -1,0 +1,2 @@
+# Pomodoro Timer
+This project is a pair programming project with [rlmoser99](https://github.com/rlmoser99) from [The Odin Project](https://www.theodinproject.com/courses/web-development-101/lessons/pairing-project).
