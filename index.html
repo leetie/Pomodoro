@@ -5,6 +5,7 @@
   <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="clock.png">
+  <audio id="ding" src="361564__matthewwong__ding-dong.wav"></audio>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pomodoro Timer</title>
 </head>
@@ -12,11 +13,11 @@
   <div id="container">
     <div id="content">
       <div id="timer">
-        <p>Timer</p>
-        <p>25:00</p><br>
+        <p id="timerType">Timer</p>
+        <p id="display">25:00</p><br>
       </div>
       <p>Break</p>
-      <p>05:00</p>
+      <p id="breakTimer">05:00</p>
       <div id="buttons">
         <div id="start">
           <button>Start</button>
