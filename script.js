@@ -59,6 +59,7 @@ start.addEventListener('click', (e) => {
 stop.addEventListener('click', (e) => clearInterval(countdown));
 selectButtons.forEach((button) => {
   button.addEventListener('click', (e) => {
+    clearInterval(countdown);
     display.textContent = button.textContent;
   })
 });
