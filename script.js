@@ -5,6 +5,8 @@ const stop = document.getElementById('stop');
 const breakTimer = document.getElementById('breakTimer');
 const timerType = document.getElementById('timerType');
 const ding = document.getElementById('ding');
+const selectButtons = document.querySelectorAll('.selectButton');
+let selectedSeconds;
 
 function displayTimer(seconds) {
   const minutes = Math.floor(seconds / 60);
@@ -39,12 +41,24 @@ function timer(seconds) {
 }, 1000);
 } 
 
-start.addEventListener('click', (e) => timer(1500)); //timer time
+function getSelectedSeconds () {
+  let displaySeconds = document.getElementById('display').textContent;
+  console.log(displaySeconds);
+  //convert displaySeconds into seconds--"01:00 = 60"
+  displaySeconds = displaySeconds.split(":")
+  console.log(displaySeconds);
+  displaySeconds = parseInt(displaySeconds[0]) * 60 + (parseInt(displaySeconds[1]));
+  console.log(displaySeconds);
+  selectedSeconds = displaySeconds;
+}
+
+start.addEventListener('click', (e) => {
+  getSelectedSeconds();
+  timer(selectedSeconds);
+}) //timer time
 stop.addEventListener('click', (e) => clearInterval(countdown));
-
-//make stop button work like a pause button
-//+ and - buttons to change time
-//css?
-
-
-
+selectButtons.forEach((button) => {
+  button.addEventListener('click', (e) => {
+    display.textContent = button.textContent;
+  })
+});

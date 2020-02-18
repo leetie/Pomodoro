@@ -44,6 +44,19 @@ html {
   height: 100%;  
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdownContent {
+  display: none;
+ 
+  width: 100%;
+}
+
+.dropdown:hover .dropdownContent {display: block;}
+
 @media only screen and (min-width: 600px) {
   #content {
     width: 50vw;
